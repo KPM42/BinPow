@@ -1,0 +1,15 @@
+int BinPow(int x, int n)
+{
+	int p = 1;
+	while (n > 0)
+	{
+		if (n % 2 != 0)
+		{
+			p *= x;
+			n--;
+		}
+		x *= x;
+		n /= 2;
+	}
+	return p;
+}
